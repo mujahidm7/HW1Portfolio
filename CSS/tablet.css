@@ -1,0 +1,16 @@
+/* Tablet layout (no flexbox) */
+main { padding: 1.5rem; }
+
+.cards .card {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  margin: 0 1% 1rem 1%;
+}
+
+.profile { text-align: left; }
+.profile img { float: left; margin: 0 1rem 1rem 0; }
+
+.projects .project { border-bottom: 1px solid #eee; padding: .6rem 0; }
+
+.contact-form { max-width: 640px; }

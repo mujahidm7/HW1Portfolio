@@ -1,0 +1,17 @@
+/* Desktop layout (no flexbox) */
+main { width: 92%; margin: 0 auto; }
+
+.hero { padding: 2rem 0; }
+.hero-content { max-width: 980px; margin: 0 auto; }
+
+.cards .card {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.5% 1rem 1.5%;
+  vertical-align: top;
+}
+
+.about, .projects { max-width: 980px; margin: 0 auto; }
+.contact { max-width: 720px; margin: 0 auto; }
+
+.site-footer { margin-top: 3rem; }

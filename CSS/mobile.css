@@ -1,0 +1,64 @@
+/* Color scheme (Adobe Color):
+   Primary #1F4B99, Secondary #0AA0C3, Accent #FFB703, Text #222, Muted #f5f7fb */
+:root {
+  --primary: #1F4B99;
+  --secondary: #0AA0C3;
+  --accent: #FFB703;
+  --text: #222;
+  --muted: #f5f7fb;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background: #fff;
+}
+
+/* Angled linear gradient header (135deg) */
+.site-header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  padding: 1.2rem;
+  text-align: center;
+}
+.nav { list-style: none; padding: 0; margin: .5rem 0 0; }
+.nav li { display: inline-block; margin: 0 .35rem; } /* no flexbox */
+.nav a { color: #fff; text-decoration: none; padding: .4rem .6rem; border-radius: 6px; }
+.nav a:hover { background: rgba(255,255,255,.18); }
+
+.hero { padding: 1.5rem; background: linear-gradient(180deg, var(--muted), #fff); }
+.hero .cta {
+  display: inline-block; margin-top: .8rem; padding: .6rem 1rem;
+  border: 1px solid var(--primary); background: var(--accent); color: #111;
+  text-decoration: none; border-radius: 8px;
+}
+
+.highlights, .about, .projects, .contact { padding: 1rem; }
+.cards .card {
+  background: #fff; border: 1px solid #e7e9f2; border-radius: 10px;
+  padding: 1rem; margin-bottom: .8rem; box-shadow: 0 1px 4px rgba(0,0,0,.04);
+}
+
+/* About */
+.profile { text-align: center; }
+.profile img { border-radius: 50%; display: block; margin: 0 auto; }
+
+/* Contact form */
+.contact-form label { display: block; margin-top: .7rem; }
+.contact-form input, .contact-form textarea {
+  width: 100%; padding: .6rem; border: 1px solid #d7d9e2; border-radius: 8px;
+}
+.contact-form button {
+  margin-top: 1rem; padding: .7rem 1rem; background: var(--primary);
+  color: #fff; border: 0; border-radius: 8px; cursor: pointer;
+}
+
+/* Footer gradient */
+.site-footer {
+  text-align: center; padding: 1.2rem;
+  background: linear-gradient(180deg, #fff, var(--muted));
+  margin-top: 2rem;
+}
