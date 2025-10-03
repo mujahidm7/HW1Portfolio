@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mujahid — Portfolio (Home)</title>
 
-  <!-- Separate CSS per viewport (required) -->
-  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 599px)">
-  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 600px) and (max-width: 1023px)">
-  <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1024px)">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="css/mobile.css?v=2"  media="(max-width: 599px)">
+  <link rel="stylesheet" href="css/tablet.css?v=2"  media="(min-width: 600px) and (max-width: 1023px)">
+  <link rel="stylesheet" href="css/desktop.css?v=2" media="(min-width: 1024px)">
+
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
-    <div class="brand">
-      <h1>Mujahid Marwan</h1>
-      <p class="tagline">Student • Builder • Problem Solver</p>
+    <div class="logo">
+      <img src="MM LOGO.png" alt="Avatar/Logo">
     </div>
-    <nav aria-label="Primary">
+    <nav>
       <ul class="nav">
         <li><a aria-current="page" href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
@@ -26,39 +27,23 @@
     </nav>
   </header>
 
-  <main>
-    <!-- Gradient hero (angled linear gradient) -->
-    <section class="hero" role="banner">
-      <article class="hero-content">
-        <h2>Hello 👋</h2>
-        <p>This is my HTML5/CSS3 portfolio. It’s responsive with fluid design and media queries (no flexbox).</p>
-        <a class="cta" href="projects.html">See my work</a>
-      </article>
+  <!-- Hero -->
+  <main class="container">
+    <section class="hero">
+      <h2>Hello 👋</h2>
+      <p>Welcome to my portfolio! This site was fully made by me.</p>
+      <a class="cta" href="projects.html">See my work</a>
     </section>
 
-    <section class="highlights" aria-labelledby="h-title">
-      <h2 id="h-title">Highlights</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Semantic HTML</h3>
-          <p>Uses header, nav, section, article, and footer for structure and accessibility.</p>
-        </article>
-        <article class="card">
-          <h3>Responsive</h3>
-          <p>Three CSS files: mobile, tablet, desktop. Fluid widths + inline-block/floats (no flexbox).</p>
-        </article>
-        <article class="card">
-          <h3>Validated</h3>
-          <p>HTML/CSS checked with W3C; links checked; WAVE accessibility tested.</p>
-        </article>
-      </div>
-    </section>
+   
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
-    <p>© <span id="year"></span> Mujahid Marwan. All rights reserved.</p>
-    <p>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>© <span id="year"></span> Mujahid Marwan</p>
+    <p>Contact: <a href="mailto:your.email@example.com">mujahidmarwan.abdulkarim@ontariotechu.net</a></p>
   </footer>
+
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

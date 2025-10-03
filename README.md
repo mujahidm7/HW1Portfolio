@@ -1,7 +1,7 @@
 # Personal Portfolio — Submission
 
-**Live Site:** https://<mujahidm7>.github.io/<repo-name>/  
-**Repository:** https://github.com/<mujahidm7>/<repo-name>
+**Live Site:** https://github.com/mujahidm7/HW1Portfolio/  
+**Repository:** https://github.com/mujahidm7/HW1Portfolio
 
 ## Viewport Dimensions (and Why)
 - Mobile: 0–599px → common smartphones

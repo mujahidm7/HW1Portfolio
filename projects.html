@@ -3,15 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mujahid — Projects</title>
-  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 599px)">
-  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 600px) and (max-width: 1023px)">
-  <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1024px)">
+  <title>Projects — Mujahid</title>
+ <link rel="stylesheet" href="css/mobile.css?v=2"  media="(max-width: 599px)">
+ <link rel="stylesheet" href="css/tablet.css?v=2"  media="(min-width: 600px) and (max-width: 1023px)">
+ <link rel="stylesheet" href="css/desktop.css?v=2" media="(min-width: 1024px)">
+
 </head>
 <body>
   <header class="site-header">
-    <div class="brand"><h1>Projects</h1></div>
-    <nav aria-label="Primary">
+    <div class="logo">
+      <img src="MM LOGO.png" alt="Logo">
+    </div>
+    <nav>
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
@@ -21,41 +24,29 @@
     </nav>
   </header>
 
-  <main>
-    <section class="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">Selected Work</h2>
+  <main class="container projects">
+    <h2>My Projects</h2>
 
-      <!-- Keep each to 2–3 lines -->
-      <article class="project">
-        <h3>Responsive Layout</h3>
-        <p>Multi-page site using semantic HTML + media queries. Separate CSS files for mobile, tablet, desktop.</p>
-      </article>
+    <article class="project">
+      <h3>Writing and Critical Thinking – Analytical Essay Project</h3>
+      <p>I researched and wrote a structured essay on digital transformation in education. The project focused on building strong thesis statements, evidence-based arguments, and critical evaluation of sources.</p>
+    </article>
 
-      <article class="project">
-        <h3>Form Validation</h3>
-        <p>Accessible contact form with HTML5 required fields, email type, and phone pattern.</p>
-      </article>
+    <article class="project">
+      <h3>Intro to Business Analytics – Excel Data Dashboard</h3>
+      <p>Created an interactive Excel dashboard analyzing sales data. The project involved cleaning raw data, applying formulas, and visualizing key insights to support better decision-making.</p>
+    </article>
 
-      <article class="project">
-        <h3>Media Embed</h3>
-        <p>Integrated personal intro video with poster image and captions/alt text around media elements.</p>
-      </article>
+    <article class="project">
+      <h3>Management of the Enterprise – Case Study Report</h3>
+      <p>Worked on a group case study about organizational change in a large company. We applied management principles to analyze leadership, structure, and communication, then proposed strategies for improvement.<video>` tag.</p>
+    </article>
 
-      <article class="project">
-        <h3>Color & Gradients</h3>
-        <p>Custom color palette; linear and angled gradients for hierarchy and brand feel.</p>
-      </article>
-
-      <article class="project">
-        <h3>Clean Navigation</h3>
-        <p>Simple, keyboard-friendly nav and clearly labeled landmarks for screen readers.</p>
-      </article>
-    </section>
   </main>
 
   <footer class="site-footer">
     <p>© <span id="year"></span> Mujahid Marwan</p>
-    <p>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>Contact: <a href="mailto:your.email@example.com">mujahidmarwan.abdulkarim@ontariotechu.net</a></p>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>

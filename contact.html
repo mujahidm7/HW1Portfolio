@@ -3,15 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mujahid — Contact</title>
-  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 599px)">
-  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 600px) and (max-width: 1023px)">
-  <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1024px)">
+  <title>Contact — Mujahid</title>
+  <link rel="stylesheet" href="css/mobile.css?v=2"  media="(max-width: 599px)">
+  <link rel="stylesheet" href="css/tablet.css?v=2"  media="(min-width: 600px) and (max-width: 1023px)">
+  <link rel="stylesheet" href="css/desktop.css?v=2" media="(min-width: 1024px)">
+
 </head>
 <body>
   <header class="site-header">
-    <div class="brand"><h1>Contact Me</h1></div>
-    <nav aria-label="Primary">
+    <div class="logo">
+      <img src="MM LOGO.png" alt="Logo">
+    </div>
+    <nav>
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
@@ -21,36 +24,28 @@
     </nav>
   </header>
 
-  <main>
-    <section class="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Send a Message</h2>
-      <p>Fields marked * are required.</p>
+  <main class="container contact">
+    <h2>Send me your questions, comments and project related queries!</h2>
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
 
-      <!-- HTML5 validation: required, type=email, pattern for phone -->
-      <form class="contact-form" action="#" method="post" novalidate>
-        <label for="name">Name *</label>
-        <input id="name" name="name" type="text" required minlength="2" maxlength="60">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
 
-        <label for="email">Email *</label>
-        <input id="email" name="email" type="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
 
-        <label for="phone">Phone *</label>
-        <input id="phone" name="phone" type="tel"
-               required
-               pattern="^[0-9\\-\\+\\s\\(\\)]{7,20}$"
-               title="Use digits, spaces, +, -, ( ) only">
+      <label for="captcha">*What is 2+2? (Robot Verification)</label>
+      <input type="text" id="captcha" name="captcha" required pattern="4">
 
-        <label for="message">Message *</label>
-        <textarea id="message" name="message" required minlength="10" maxlength="1000"></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+      <button type="submit">Submit</button>
+    </form>
   </main>
 
   <footer class="site-footer">
     <p>© <span id="year"></span> Mujahid Marwan</p>
-    <p>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>Contact: <a href="mailto:your.email@example.com">mujahidmarwan.abdulkarim@ontariotechu.net</a></p>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
